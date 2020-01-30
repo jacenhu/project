@@ -7,6 +7,13 @@ module.exports = {
             '/program/dataStructure/dataStructure',
           ],
         },
+        {
+          title: '前端',
+          collspsable: true,
+          children: [
+            '/program/front/vuePress',
+          ],
+        },
     ],
     '/books/': [
         {
