@@ -95,3 +95,6 @@ nginx: configuration file /etc/nginx/nginx.conf test is successfu
 * 注：域名解析是指把域名指向网站空间IP
 2. 访问 [www.jacenhu.site](www.jacenhu.site)（由于当前未备案完成，暂时无法通过域名访问）
 
+## 五、开发小知识点
+
+

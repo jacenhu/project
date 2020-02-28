@@ -22,6 +22,7 @@ module.exports = {
           children: [
             '/books/read/人间失格',
             '/books/read/断舍离',
+            '/books/read/原则',
           ],
         },
     ],
