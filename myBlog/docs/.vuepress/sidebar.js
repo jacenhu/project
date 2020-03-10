@@ -14,6 +14,13 @@ module.exports = {
             '/program/front/vuePress',
           ],
         },
+        {
+          title: '后端',
+          collspsable: true,
+          children: [
+            '/program/end/springBoot',
+          ],
+        },
     ],
     '/books/': [
         {
