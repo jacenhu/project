@@ -15,16 +15,21 @@
 1. 命令行输入：npm install -g vuepress
 全局安装vuepress
 2. 搭建博客框架
+
 2.1 创建博客目录 mkdir myBlog
+
 2.2 创建子目录
 * /docs
 * /docs/.vuepress
 * /docs/.vuepress/public
+
 2.3 创建js文件
 * config.js
 * nav.js
 * sidebar.js
+
 2.4 然后按照[vuepress官方文档](https://vuepress.vuejs.org/zh/guide/)编写各个文件的内容。
+
 2.5 本地调试
 * 构建静态文件 npm run build
 * 发布 npm run dev

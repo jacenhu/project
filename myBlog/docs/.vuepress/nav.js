@@ -20,5 +20,10 @@ module.exports=[
         text:'知乎',
         link: 'https://www.zhihu.com/people/michelin-93',
         target:'_blank'
-    }    
+    },
+    {
+        text:'github',
+        link: 'https://github.com/jacenhu',
+        target:'_blank'
+    }   
 ]
