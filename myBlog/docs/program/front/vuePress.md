@@ -81,7 +81,9 @@ nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successfu
 ```
 6. 一些nginx的常用命令
+
 6.1 卸载nginx rpm -e nginx
+
 6.2 服务启动/停止
 * 设置开机启动
   sudo systemctl enable nginx
@@ -90,15 +92,16 @@ nginx: configuration file /etc/nginx/nginx.conf test is successfu
 * 重启服务
   sudo systemctl restart nginx
   nginx -s reload
+  
 7. 配置完成后，地址栏输入: http://ip，即可访问
-如： http://47.107.82.83
+如： http://X.X.X.X
 ![nginx-ip-pic](./../../.vuepress/public/img/vuepress/nginx-ip.png)
 
 ## 四、域名解析
 > 每次通过http://ip方式登录，需要输入很多数字，比较麻烦。因此申请一个简易好记的域名十分重要。
-1. 此前已经申请好了域名 www.jancehu.site，通过云DNS解析，将其映射到47.107.82.83
+1. 此前已经申请好了域名 www.jancehu.site，通过云DNS解析，将其映射到X.X.X.X
 * 注：域名解析是指把域名指向网站空间IP
-2. 访问 [www.jacenhu.site](www.jacenhu.site)（由于当前未备案完成，暂时无法通过域名访问）
+2. 访问 [www.jacenhu.site](www.jacenhu.site)
 
 ## 五、开发小知识点
 
