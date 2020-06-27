@@ -19,6 +19,7 @@ module.exports = {
           collspsable: true,
           children: [
             '/program/end/springBoot',
+            '/program/end/开发环境配置',
           ],
         },
     ],
