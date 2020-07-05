@@ -18,8 +18,8 @@ module.exports = {
           title: '后端',
           collspsable: true,
           children: [
-            '/program/end/springBoot',
             '/program/end/开发环境配置',
+            '/program/end/springBoot实践',
           ],
         },
     ],
