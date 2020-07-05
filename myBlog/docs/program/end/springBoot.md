@@ -12,7 +12,6 @@
 
 SpringBoot可以快速构建一个微服务单元
 
-（注意： Spring  Maven）
 3、环境
 - jdk 1.8: SpringBoot推荐1.7以上
 - maven3.x maven 3.3以上版本
