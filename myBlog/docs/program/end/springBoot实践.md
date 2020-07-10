@@ -171,19 +171,35 @@ public class HelloWorldMainApplication {
 public @interface SpringBootApplication {
 ```
 
-(1)第一个注解： *@SpringBootConfiguration*
+(1)第一个注解： **@SpringBootConfiguration**
 
 @SpringBootConfiguration SpringBoot的配置类。标注在某个类上，表示这是一个SpringBoot的配置类。
 
 @Configuration :标注在配置类。配置类也是容器中的一个组件。@Component
 
-(2)第二个注解： *@EnableAutoConfiguration*
+(2)第二个注解： **@EnableAutoConfiguration**
 
 @EnableAutoConfiguration 用于开启自动配置功能。
 
 
+@Import({AutoConfigurationPackages.Registrar.class}) Spring的底层注解@import,给容器导入一个组件。将主配置类（@SpringBootApplication标注）的类的所有包以及下面所有子包里面所有的组件扫描到Spring容器。
 
 
+@Import({AutoConfigurationImportSelector.class})  导入哪些组件的选择器；将需要导入的组件以全类名的方式返回；这些组件就会被添加到容器中;会给容器中导入非常多的自动配置类（xxxAutoConfiguration）；给容器导入这个场景需要的所有组件，并配置好这些组件。
+
+![spring-dev-014](./../../.vuepress/public/img/springPractice/springDev014.png)
+
+免去手动编写配置注入功能组件等工作。
+SpringFactoriesLoader.loadFactoryNames(EnableAutoConfiguration.class,classLoader)
+
+SpringBoot在启动的时候从类路径下META-INF/spring.factories中获取enableConfiguration指定的值，将这些值作为自动配置的类导入到容器中，自动配置类就生效，帮助我们进行配置工作。
+
+![spring-dev-015](./../../.vuepress/public/img/springPractice/springDev015.png)
+
+
+J2EE的整体解决方案和自动配置都在spring-boot-autoconfigure-2.2.2.RELEASE.jar
+
+---
 
 问题记录：
 
