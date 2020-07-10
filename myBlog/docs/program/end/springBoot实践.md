@@ -132,6 +132,57 @@ pom.xml中添加：
 打包成jar包后，执行java -jar
 ![spring-dev-013](./../../.vuepress/public/img/springPractice/springDev013.png)
 
+### 2.HelloWorld探究
+1、场景启动器starters
+```
+    SpringBoot将所有功能场景抽取出来为一个个pom启动器，帮助导入正常运行所需要的依赖。
+```
+参考：https://docs.spring.io/spring-boot/docs/2.2.2.RELEASE/reference/html/
+
+2、主程序类、主入口
+```
+@SpringBootApplication
+public class HelloWorldMainApplication {
+
+    public static void main(String[] args){
+        // Spring应用启动
+        SpringApplication.run(HelloWorldMainApplication.class, args);
+    }
+}
+```
+
+@SpringBootApplication 标注在某个类上面，说明这个类是SpringBoot的主配置类，Spring应该运行这个类的main方法来启动SpringBoot应用。
+```
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Inherited
+@SpringBootConfiguration
+@EnableAutoConfiguration
+@ComponentScan(
+    excludeFilters = {@Filter(
+    type = FilterType.CUSTOM,
+    classes = {TypeExcludeFilter.class}
+), @Filter(
+    type = FilterType.CUSTOM,
+    classes = {AutoConfigurationExcludeFilter.class}
+)}
+)
+public @interface SpringBootApplication {
+```
+
+(1)第一个注解： *@SpringBootConfiguration*
+
+@SpringBootConfiguration SpringBoot的配置类。标注在某个类上，表示这是一个SpringBoot的配置类。
+
+@Configuration :标注在配置类。配置类也是容器中的一个组件。@Component
+
+(2)第二个注解： *@EnableAutoConfiguration*
+
+@EnableAutoConfiguration 用于开启自动配置功能。
+
+
+
 
 
 问题记录：
