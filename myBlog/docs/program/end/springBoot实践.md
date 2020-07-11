@@ -1,6 +1,6 @@
 # SpringBoot实践
 
-## 一、SpringBoot入门
+## 1 SpringBoot入门
 1、SpringBoot简介
 * 简化Spring应用开发的一个框架
 * 整个Spring技术栈思维一个大整合
@@ -18,8 +18,8 @@ SpringBoot可以快速构建一个微服务单元
 - IDEA 2017
 - SpringBoot 1.5.9.RELEASE
 
-## 二、SpringBoot实践
-### 1.springboot hello world
+## 2 SpringBoot实践
+### 2.1 springboot hello world
 1、创建Maven项目
 
 step1 设置maven
@@ -132,7 +132,9 @@ pom.xml中添加：
 打包成jar包后，执行java -jar
 ![spring-dev-013](./../../.vuepress/public/img/springPractice/springDev013.png)
 
-### 2.HelloWorld探究
+---
+
+### 2.2 HelloWorld探究
 1、场景启动器starters
 ```
     SpringBoot将所有功能场景抽取出来为一个个pom启动器，帮助导入正常运行所需要的依赖。
@@ -200,6 +202,136 @@ SpringBoot在启动的时候从类路径下META-INF/spring.factories中获取ena
 J2EE的整体解决方案和自动配置都在spring-boot-autoconfigure-2.2.2.RELEASE.jar
 
 ---
+
+### 2.3 使用SpringInitilalizer创建SpringBoot项目
+
+#### step1 下载插件
+
+Setting中在Plugins中安装Spring Assistant
+
+![spring-dev-016](./../../.vuepress/public/img/springPractice/springDev016.png)
+
+#### step2 使用Spring Assistant创建项目
+
+![spring-dev-017](./../../.vuepress/public/img/springPractice/springDev017.png)
+
+![spring-dev-018](./../../.vuepress/public/img/springPractice/springDev018.png)
+
+![spring-dev-019](./../../.vuepress/public/img/springPractice/springDev019.png)
+
+ ![spring-dev-020](./../../.vuepress/public/img/springPractice/springDev020.png)
+
+默认生成的SpringBoot项目包含：
+* 主程序
+* resoucrces文件夹
+ > static静态资源;
+
+ > temnplates模板页面;
+
+ > applications.properties: SpringBoot应用的配置文件
+
+ ![spring-dev-021](./../../.vuepress/public/img/springPractice/springDev021.png)
+
+ ```
+ <?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.1.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>spring-boot-01-helloworld-quick</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spring-boot-01-helloworld-quick</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+
+ ```
+### 2.4 配置
+#### 2.4.1 yaml简介
+
+SpringBoot使用一个全局的配置文件，配置文件名是固定的。
+* application.properties
+* application.yml
+
+配置文件的作用：修改SpringBoot自动配置的默认值;
+
+yml 以数据为中心，比json、xml更适合做配置文件。
+
+
+application.properties与application.yml对比：
+
+ ![spring-devConfig-021](./../../.vuepress/public/img/springPractice/springDevConfig001.png)
+
+ #### 2.4.2 yaml语法
+
+（1）k:(空格)v：表示一对键值对（空格必须有）；
+
+```
+server:
+    port: 8081
+```
+
+以**空格**的缩进来控制层级关系。
+ 
+缩进的空格数量不重要。只要是左对齐的一列数据，就是同一层级。
+
+属性和值也是大小写敏感。
+
+缩进时候不允许使用Tab键、只允许使用空格。
+
+
+（2）YAML的三种数据结构
+
+* 字面值：普通的值（数组、字符串、布尔）
+
+* 对象、Map（属性和值）（键值对）：
+k、v：在下一行来写对象的属性和值的关系；注意缩进。
+
+* 数组
+
+
+
+
+
+
 
 问题记录：
 
