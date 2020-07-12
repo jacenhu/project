@@ -325,7 +325,35 @@ server:
 * 对象、Map（属性和值）（键值对）：
 k、v：在下一行来写对象的属性和值的关系；注意缩进。
 
+``` yaml
+friends:
+    name: xiaoming
+    age: 20
+```
+行内写法：
+``` yaml
+friends： {name: xiaoming, age: 20}
+```
+
 * 数组
+
+用-表示数组
+``` yaml
+pets:
+    - cat
+    - dog
+    - pig
+```
+
+行内写法：
+``` yaml
+pets: [cat, dog, pig]
+```
+
+SPringBoot使用snakeyaml(https://bitbucket.org/asomov/snakeyaml/wiki/Documentation#markdown-header-yaml-syntax)来解吸YAML
+
+
+
 
 
 
