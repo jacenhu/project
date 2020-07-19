@@ -352,6 +352,28 @@ pets: [cat, dog, pig]
 
 SPringBoot使用snakeyaml(https://bitbucket.org/asomov/snakeyaml/wiki/Documentation#markdown-header-yaml-syntax)来解吸YAML
 
+### 2.5 日志
+
+抽象 sl4j
+
+实际 logback
+
+### 2.6 SpringBoot Web开发
+
+使用SpringBoot
+
+1） 创建SpringBoot应用时，选中我们需要的模块。
+
+2） SpringBoot会将这些配置好，只需要在配置文件中指定少量配置就可以运行起来。
+
+3） 编写业务代码
+
+注：要自己知道Spring的自动配置原理，比如：如何修改，能否扩展？
+
+
+
+
+
 
 
 
