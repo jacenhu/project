@@ -360,7 +360,7 @@ SPringBoot使用snakeyaml(https://bitbucket.org/asomov/snakeyaml/wiki/Documentat
 
 ### 2.6 SpringBoot Web开发
 
-使用SpringBoot
+#### 2.6.1 使用SpringBoot
 
 1） 创建SpringBoot应用时，选中我们需要的模块。
 
@@ -369,6 +369,36 @@ SPringBoot使用snakeyaml(https://bitbucket.org/asomov/snakeyaml/wiki/Documentat
 3） 编写业务代码
 
 注：要自己知道Spring的自动配置原理，比如：如何修改，能否扩展？
+
+#### 2.6.2 
+
+webjars
+
+### 2.6.2 Docker
+
+#### 定义：Docker是开源的应用容器引擎，基于Go语言。
+
+#### 核心概念
+
+docker主机：安装了Docker程序的机器。
+
+docker客户端：连接docker主机进行操作。
+
+docker仓库：用于保存各种打包好的软件镜像。
+
+docker镜像：软件打包好的镜像，放在docker仓库中。
+
+docker容器：镜像启动后的实例称为一个容器。容器是独立运行的一个或者一组应用。
+
+使用docker的步骤：
+
+1）安装docker；
+2）去docker仓库找到镜像；
+3）使用docker运行这个镜像。
+
+
+
+
 
 
 
