@@ -5,6 +5,7 @@ module.exports = {
           collspsable: true,
           children: [
             '/program/dataStructure/dataStructure',
+            '/program/dataStructure/AlgorithmAndDataStructure',
           ],
         },
         {
