@@ -1,4 +1,20 @@
-# I am a Software Development Engineer.
-## skill: java/c/c++/qt/front(html/css/js/vue)/gis
-## Location: ShenZhen
-## Email: jchu199408@gmail.com
+# I am a Software Development Engineer
+
+[[toc]]
+
+## Skill
+
+* Java
+* C/C++/Qt
+* C#
+* Python
+* Front End(html/css/js/vue)
+* Gis
+
+## Location
+
+* ShenZhen
+
+## Email
+
+* jchu199408@gmail.com

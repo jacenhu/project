@@ -1,5 +1,7 @@
 # 数据结构（C language）
 
+[[toc]]
+
 ## Chapter1 绪论
 ### 计算
 * computer science 实际上是computing science

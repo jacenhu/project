@@ -11,8 +11,8 @@ module.exports={
         ['link', { rel: 'apple-touch-icon', href: './favicon.ico' }], //适配移动端ico
       ],
     base:'/',
-    markdown:{
-      lineNumbers: false,
+    markdown: {
+      lineNumbers: true
     },
     themeConfig:{
       nav: require('./nav'),

@@ -1,5 +1,7 @@
 # 使用vuePress搭建个人博客
 
+[[toc]]
+
 ## 一、安装node.js
 1. 进入[node.js下载页面](https://nodejs.org/en/download/)，根据操作系统类型选择特定版本下载。
 ![node-download-pic](./../../.vuepress/public/img/vuepress/node-download.png)

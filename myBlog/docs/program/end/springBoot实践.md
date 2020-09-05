@@ -1,5 +1,7 @@
 # SpringBoot实践
 
+[[toc]]
+
 ## 1 SpringBoot入门
 1、SpringBoot简介
 * 简化Spring应用开发的一个框架
