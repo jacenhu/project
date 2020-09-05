@@ -93,4 +93,6 @@ details语法试验了，没有生效。可以使用H5标签。
 
 * Travis CI
 
+一个使用yaml格式配置用于持续集成完成自动化测试部署的开源项目
+
 https://docs.travis-ci.com/user/deployment/pages/
