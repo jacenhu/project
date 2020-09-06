@@ -24,9 +24,6 @@ module.exports={
           headerAnchorSelector: '.header-anchor'
         },
         '@vuepress/back-to-top': true,
-        '@vuepress/google-analytics': {
-          'ga': 'UA-177309883-1' // UA-00000000-0
-        },
         '@vuepress/last-updated': true,
         '@vuepress/nprogress': true
     }
