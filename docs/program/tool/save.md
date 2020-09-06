@@ -97,3 +97,7 @@ details语法试验了，没有生效。可以使用H5标签。
 一个使用yaml格式配置用于持续集成完成自动化测试部署的开源项目
 
 https://docs.travis-ci.com/user/deployment/pages/
+
+## ECS异常
+* 处理挖矿程序
+https://help.aliyun.com/document_detail/161236.html?spm=5176.10695662.1996646101.searchclickresult.6739340dh4r4WY
