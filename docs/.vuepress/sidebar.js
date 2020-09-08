@@ -21,7 +21,13 @@ module.exports = {
           children: [
             '/program/end/开发环境配置',
             '/program/end/springBoot实践',
-            '/program/end/CppPrimer',
+          ],
+        },
+        {
+          title: 'C++',
+          collspsable: true,
+          children: [
+            '/program/cpp/CppPrimer',
           ],
         },
         {

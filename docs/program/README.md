@@ -7,6 +7,7 @@
 ## 后端
 * [开发环境配置](/program/end/开发环境配置.md)
 * [SpringBoot实践](/program/end/springBoot实践.md)
-* [C++ Primer](/program/end/CppPrimer.md)
+## C++
+* [C++ Primer](/program/cpp/CppPrimer.md)
 ## 工具
 * [收藏](/program/tool/save.md)
