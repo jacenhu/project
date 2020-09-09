@@ -9,5 +9,6 @@
 * [SpringBoot实践](/program/end/springBoot实践.md)
 ## C++
 * [C++ Primer](/program/cpp/CppPrimer.md)
+* [vscode运行c++](/program/cpp/vscodeCpp.md)
 ## 工具
 * [收藏](/program/tool/save.md)
