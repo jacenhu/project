@@ -28,6 +28,7 @@ module.exports = {
           collspsable: true,
           children: [
             '/program/cpp/CppPrimer',
+            '/program/cpp/vscodeCpp',
           ],
         },
         {
