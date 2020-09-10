@@ -10,5 +10,7 @@
 ## C++
 * [C++ Primer](/program/cpp/CppPrimer.md)
 * [vscode运行c++](/program/cpp/vscodeCpp.md)
+## other
+* [Hello world 鸿蒙OS App小实践](/program/other/harmonyPractice.md)
 ## 工具
 * [收藏](/program/tool/save.md)

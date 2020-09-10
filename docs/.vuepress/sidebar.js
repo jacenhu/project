@@ -32,6 +32,13 @@ module.exports = {
           ],
         },
         {
+          title: 'other',
+          collspsable: true,
+          children: [
+            '/program/other/harmonyPractice',
+          ],
+        },
+        {
           title: '工具',
           collspsable: true,
           children: [
