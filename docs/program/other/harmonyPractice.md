@@ -77,7 +77,7 @@ Configure -> Settings -> Appearance & Behavior ->  System Settings -> HarmonyOS 
 ![hm_devStudioInstall10](./../../.vuepress/public/img/hm/hm_devStudioInstall10.png)
 
 废了九牛二虎之力，模拟器终于下载下来。然后运行程序。
-点击HPV，会转到华为开发者联盟网站。
+点击Toos->HVD Manager，会转到华为开发者联盟网站。
 
 ![hm_devStudioInstall12](./../../.vuepress/public/img/hm/hm_devStudioInstall12.png)
 
