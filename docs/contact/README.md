@@ -9,6 +9,7 @@
 * C#
 * Python
 * Front End(html/css/js/vue)
+* Shell
 * Gis
 
 ## Location
