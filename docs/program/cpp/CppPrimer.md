@@ -680,18 +680,75 @@ for err_msg(initializer_list<string> li)
 
 ### 6.3 返回类型和return语句
 
+2种：无返回值函数和右返回值函数。
+
 ```c++
 return;
 return expression;
 ```
 
+函数完成后，它所占用的存储空间也会随着被释放掉。
+
+::: warning
+
+返回局部对象的引用是错误的；返回局部对象的指针也是错误的。
+
+:::
+
 ### 6.4 函数重载
+
+重载函数：同一作用域内的几个函数名字相同但形参列表不通，我们称之为重载函数。（overloaded）。
+
+不允许2个函数除了返回类型外其他所有的要素都相同。 
+
+**重载与作用域**
+
+如果在内存作用域中声明名字，它将隐藏外层作用域中声明的同名实体。
 
 ### 6.5 特殊用途语言特性
 
+（1）默认实参
+
+函数调用时，实参按其位置解析，默认实参负责填补函数调用缺少的尾部实参。
+
+```c++
+typedef string::size_type sz;
+string screen(sz ht = 24, sz wid = 80, char background = ' ');
+```
+
+::: tip
+
+当设计含有默认实参的函数时，需要合理设置形参的顺序。一旦某个形参被赋予了默认值，它后面的所有形参都必须有默认值。
+
+:::
+
+（2）内联函数
+
+使用关键词inline来声明内联函数。
+
+内联用于优化规模较小，流程直接，频繁调用的函数。
+
+（3）constexpr函数
+
+constexpr函数是指能用于常量表达式的函数。
+
 ### 6.6 函数匹配
 
+Step1:确定候选函数和可选函数。
+
+Step2:寻找最佳匹配。
+
 ### 6.7 函数指针
+
+函数指针指向的是函数而非对象。
+
+```c++
+void useBigger (const string &s1, const string &s2, bool pf(const string &, const string &));
+等价于
+void useBigger (const string &s1, const string &s2, bool (*pf)(const string &, const string &));
+```
+
+
 
 
 
