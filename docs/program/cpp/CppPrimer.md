@@ -1087,6 +1087,61 @@ ends向缓冲区插入一个空字符，然后刷新缓冲区。
 	}
 ```
 
+## 第十一章 关联容器
+
+P374-P397
+
+关联容器支持高效的关键字查找和访问。
+
+| 类型               | 备注                              |
+| ------------------ | --------------------------------- |
+| map                | 关联数组，保存关键字-值对         |
+| set                | 值保存关键字的容器                |
+| multimap           | 关键字可重复出现的map             |
+| multiset           | 关键字可重复出现的set             |
+| unordered_map      | 用哈希函数组织的map               |
+| unordered_set      | 用哈希函数组织的set               |
+| unordered_multimap | 哈希组织的map；关键字可以重复出现 |
+| unordered_multiset | 哈希组织的set；关键字可以重复出现 |
+
+### 11.1 使用关联容器
+
+map是关键词-值对的集合。
+
+为了定义一个map，我们必须指定关键字和值得类型。
+
+````cpp
+// 统计每个单词在输入中出现的次数
+map<string, size_t> word_count;
+string word;
+while (cin >> word)
+    ++word_count[word];
+for (const auto &w : word_count)
+  	count << w.first << " cccurs " < w.second 
+  				<< ((w.second > 1) ? " times" : "time") << endl;
+````
+
+set是关键字的简单集合。
+
+为了定义一个set，必须指定其元素类型。
+
+```cpp
+// 统计输入中每个单词出现的次数，并忽略常见单词
+map<string, size_t> word_count;
+set<string> exclude = {"the", "But"};
+string word;
+while (cin >> word)
+		// 只统计不在exclude中的单词
+		if (exclude.find(word) == exclude.end())
+				++word_count[word]; //获取并递增word的计数器
+```
+
+### 11.2 关联容器概述
+
+### 11.3 关联容器操作
+
+### 11.4 无序容器
+
 
 
 
