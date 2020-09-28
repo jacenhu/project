@@ -2000,33 +2000,52 @@ HasPtr& HasPtr::operator=(const HasPtr &rhs)
 
 如果需要可直接管理资源，可以使用引用计数。
 
-
-
-
-
 ### 13.3 交换操作
 
 swap
 
 ### 13.4 拷贝控制示例
 
+P460
+
 ### 13.5 动态内存管理类
+
+P464
 
 ### 13.6 对象移动
 
 与任何赋值运算符一样，移动赋值运算符必须销毁左侧运算对象的旧状态。
 
-**移动迭代器**
+（1）右值引用
 
-移动迭代器的解引用运算符生成一个右值引用。
+可通过move函数开获得绑定到左值上的右值引用。
+
+```cpp
+int && rr3 = std::move(rr1);
+```
 
 （2）移动构造函数和移动赋值运算符
+
+移动构造函数的第一个参数是该类类型的一个右值引用。
+
+**移动赋值运算符**:
+
+```cpp
+StrVec &StrVec::operator=(StrVec &&rhs) noexcept
+{
+
+}
+```
 
 **合成的移动操作**：
 
 若一个类定义了自己的拷贝构造函数、拷贝赋值运算符或者析构函数，编译器就不会为它合成移动构造函数和移动赋值运算符。
 
 如果一个类没有移动操作，类会使用对应的拷贝操作来代替移动操作。
+
+**移动迭代器**:
+
+移动迭代器的解引用运算符生成一个右值引用。
 
 （3）右值引用和成员函数
 
@@ -2036,9 +2055,13 @@ swap
 
 :::
 
+**右值和左值引用成员函数**:
+
+指出this的左值/右值属性的方式与定义const成员函数相同，在参数列表后放置一个引用限定符。P483
+
 ::: tip
 
-如果一个成员函数有引用限定符，则具有相同参数列表的所有版本都必须有引用限定符。
+如果一个成员函数有引用限定符，则具有相同参数列表的所有版本都必须有引用限定符。P485
 
 :::
 
@@ -2074,23 +2097,146 @@ operator+(data1, data2);
 // 以上2个调用等价
 ```
 
+### 14.2 输入和输出运算符   
 
+（1）重载输出运算符<<
 
-### 14.2 输入和输出运算符
+```cpp
+ostream &operator<<(ostream &os, const Sales_data &item)
+{
+	os << item.isbn() << " " << item.unites_sold << " " << item.revenue << " " << item.avg_price();
+	return os;
+}
+```
+
+（2）重载输入运算符>>
+
+```cpp
+istream &operator>>(istream &is, Sales_data &item)
+{
+	double price;
+	is >> item.bookNo >> item.units_sold >> price;
+	if (is)
+		item.revenue = items.units_sold * price;
+	else
+		item = Sales_data();
+	return is;
+}
+```
 
 ### 14.3 算术和关系运算符
 
+（1）相等运算符
+
+```cpp
+bool operator==(const Sales_data &lhs, const Sales_data &rhs)
+{
+	return lhs.isbn() == rhs.isbn() &&
+			lhs.unites_sold == rhs.units_sold &&
+			lhs.revenue == rhs.revenue;
+}
+```
+
+（2）关系运算符
+
+operator<
+
 ### 14.4 赋值运算符
+
+operator=
+
+operator+=
 
 ### 14.5 下标运算符
 
+operator[]
+
+下标运算符必须是成员函数。
+
+```cpp
+class StrVec{
+public:
+	std::string& operator[](std::size_t n){
+		return elements[n];
+	}
+	const std::string& operator[](std::size_t n) const{
+		return elements[n];
+	}
+private:
+	std::string *elements;
+}
+```
+
 ### 14.6 递减和递增运算符
+
+递增运算符（++）
+
+递减运算符（--）
+
+**定义前置递增/递减运算符**:
+
+```
+class StrBlobPtr{
+public:
+	StrBlobPtr& operator++();  // 前置运算符
+	StrBlobPtr& operator--();
+}
+```
+
+**区分前置和后置运算符**:
+
+```cpp
+class StrBlobPtr{
+public:
+	StrBlobPtr operator++(int); // 后置运算符
+	StrBlobPtr operator--(int);
+}
+```
 
 ### 14.7 成员访问运算符
 
+operator*
+
+operator->
+
 ### 14.8 函数调用运算符
 
+如果类重载了函数调用运算符，则我们可以像使用函数一样使用该类的对象。
+
+```cpp
+struct absInt{
+	int operator()(int val) const {
+		return val < 0 ? -val : val;
+	}
+};
+
+absInt absObj;
+int ui = absObj(i);
+```
+
+如果定义了调用运算符，则该类的对象称为函数对象。
+
 ### 14.9 重载、类型转换与运算符
+
+（1）类型转换运算符
+
+类型转换运算符是类的一种特殊成员函数，将一个类类型的值转换成其他类型。形式：
+
+operator type() const;
+
+（2）避免有二义性的类型转换
+
+（3）函数匹配与重载运算符
+
+::: warning
+
+如果对同一个类既提供了转换目标是算术类型的类型转换，也提供了重载的运算符，将会遇到重载运算符与内置运算符的二义性问题。
+
+:::
+
+### 术语
+
+**类类型转换**:由构造函数定义的从其他类型到类类型的转换以及由类型转换运算符定义的从类类型到其他类型的转换。
 
 ## 第十五章 面向对象程序设计
 
