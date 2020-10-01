@@ -29,6 +29,7 @@ module.exports = {
           children: [
             '/program/cpp/CppPrimer',
             '/program/cpp/vscodeCpp',
+            '/program/cpp/Ceph',
           ],
         },
         {
