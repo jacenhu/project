@@ -14,6 +14,7 @@
 * [HTTP/IP详解卷一](/program/cpp/HTTPIP.md)
 * [计算机术语概念解释（持续更新）](/program/cpp/Abstract.md)
 * [分布式存储方向的招聘信息](/program/cpp/JD.md)
+* [C++面经](/program/cpp/cppExperience.md)
 ## other
 * [Hello world 鸿蒙OS App小实践](/program/other/harmonyPractice.md)
 ## 工具

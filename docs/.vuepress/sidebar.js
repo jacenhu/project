@@ -33,6 +33,7 @@ module.exports = {
             '/program/cpp/HTTPIP',
             '/program/cpp/Abstract',
             '/program/cpp/JD',
+            '/program/cpp/cppExperience',
           ],
         },
         {
