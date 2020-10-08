@@ -11,6 +11,8 @@
 * [C++ Primer](/program/cpp/CppPrimer.md)
 * [vscode运行c++](/program/cpp/vscodeCpp.md)
 * [分布式存储系统Ceph](/program/cpp/Ceph.md)
+* [HTTP/IP详解卷一](/program/cpp/HTTPIP.md)
+* [HTTP/IP详解卷一](/program/cpp/HTTPIP.md)
 ## other
 * [Hello world 鸿蒙OS App小实践](/program/other/harmonyPractice.md)
 ## 工具

@@ -1,7 +1,7 @@
 # 分布式存储系统Ceph
 
 **声明:**
-本文为Ceph学习笔记，本文仅作学习交流使用。
+本文为Ceph学习笔记，仅作学习交流使用。
 
 ## 1 Ceph简介及使用场景介绍
 ### 1.1 Ceph简介
@@ -30,6 +30,7 @@ Ceph核心组件
 | CephFS | CephFS 全称 Ceph File System，是 Ceph 对外提供的文件系统服务。|
 
 ## 2 Ceph IO 流程及数据分布
+
 
 
 ## 3 Ceph 心跳机制
