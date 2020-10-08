@@ -30,6 +30,9 @@ module.exports = {
             '/program/cpp/CppPrimer',
             '/program/cpp/vscodeCpp',
             '/program/cpp/Ceph',
+            '/program/cpp/HTTPIP',
+            '/program/cpp/Abstract',
+            '/program/cpp/JD',
           ],
         },
         {

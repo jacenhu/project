@@ -12,7 +12,8 @@
 * [vscode运行c++](/program/cpp/vscodeCpp.md)
 * [分布式存储系统Ceph](/program/cpp/Ceph.md)
 * [HTTP/IP详解卷一](/program/cpp/HTTPIP.md)
-* [HTTP/IP详解卷一](/program/cpp/HTTPIP.md)
+* [计算机术语概念解释（持续更新）](/program/cpp/Abstract.md)
+* [分布式存储方向的招聘信息](/program/cpp/JD.md)
 ## other
 * [Hello world 鸿蒙OS App小实践](/program/other/harmonyPractice.md)
 ## 工具
