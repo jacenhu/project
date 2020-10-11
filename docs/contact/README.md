@@ -25,12 +25,12 @@
 
 ---
 # 个人技能
-* 熟练掌握C/C++语言，具有Linux平台开发经验；
+* 掌握C/C++语言，具有Linux平台开发经验；
 * 熟悉C#,JavaScript，了解Java、Python、Shell等语言；
 * 熟悉常用数据结构与算法；
-* 熟悉TCP/UDP等网络协议；
-* 熟悉开源分布式存储系统Ceph；
-* 了解分布式系统设计与开发，有后端分布式存储系统开发经验。
+* 了解TCP/UDP等网络协议；
+* 一般熟悉开源分布式存储系统Ceph；
+* 了解分布式系统设计与开发，有高性能低时延后端分布式存储系统开发经验。
 ---
 # 工作经历
 ## 华为 （2018年7月-至今）
@@ -42,7 +42,9 @@
 
 **主要工作**：
 分布式系统存储节点侧管理模块Owner，独立负责该模块需求开发、质量看护、问题闭环，涉及存储节点的视图、心跳、故障、巡检任务管理。
+
 负责RV切换性能优化特性，使得存储节点故障IO恢复时延缩减50%以上；
+
 负责重构任务流控特性，使得重构影响IO程度减小30%以上。
 
 
@@ -54,6 +56,7 @@
 
 **主要工作**：
 负责DTM Kit Portal前端用户页面的变量、分组模块，基于Vue框架进行开发设计、需求实现。
+
 作为DTM Kit JSSDK Owner，从零构建JSSDK能力，负责JSSDK整体需求开发工作。进行功能预研、需求分解、进展跟踪、风险识别、需求开发。带领5人的开发小组，按照版本节奏，交付版本。
 
 ---
@@ -66,5 +69,10 @@
 
 # 技术文章（或博客）
 - [C++ Primer学习笔记](https://jacenhu.github.io/program/cpp/CppPrimer.html)
-- [使用vuePress搭建个人博客](https://jacenhu.github.io/program/front/vuePress.html)
+- [常用数据结构与算法](https://jacenhu.github.io/program/cpp/dataStructure.html)
+- [HTTP/IP详解卷一](https://jacenhu.github.io/program/cpp/HTTPIP.html)
+- [分布式存储系统Ceph](https://jacenhu.github.io/program/cpp/Ceph.html)
+- [C++开发知识点整理](https://jacenhu.github.io/program/cpp/CppKnowledge.html)
+- [计算机术语概念解释（持续更新）](https://jacenhu.github.io/program/cpp/Abstract.html)
+- [基于VuePress搭建个人博客](https://jacenhu.github.io/program/front/vuePress.html)
 

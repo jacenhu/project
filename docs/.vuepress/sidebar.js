@@ -28,12 +28,13 @@ module.exports = {
           collspsable: true,
           children: [
             '/program/cpp/CppPrimer',
-            '/program/cpp/vscodeCpp',
-            '/program/cpp/Ceph',
+            '/program/cpp/dataStructure',
             '/program/cpp/HTTPIP',
+            '/program/cpp/Ceph',
+            '/program/cpp/CppKnowledge',
             '/program/cpp/Abstract',
+            '/program/cpp/vscodeCpp',
             '/program/cpp/JD',
-            '/program/cpp/cppExperience',
           ],
         },
         {

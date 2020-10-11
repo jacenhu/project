@@ -9,13 +9,13 @@
 * [SpringBoot实践](/program/end/springBoot实践.md)
 ## C++
 * [C++ Primer](/program/cpp/CppPrimer.md)
-* [vscode运行c++](/program/cpp/vscodeCpp.md)
-* [分布式存储系统Ceph](/program/cpp/Ceph.md)
+* [常用数据结构与算法](/program/cpp/dataStructure.md)
 * [HTTP/IP详解卷一](/program/cpp/HTTPIP.md)
+* [分布式存储系统Ceph](/program/cpp/Ceph.md)
+* [C++开发知识点整理](/program/cpp/CppKnowledge.md)
 * [计算机术语概念解释（持续更新）](/program/cpp/Abstract.md)
-* [分布式存储方向的招聘信息](/program/cpp/JD.md)
-* [C++面经](/program/cpp/cppExperience.md)
-* [C++开发知识点整理](/program/cpp/cppKnowlwdge.md)
+* [从招聘信息看分布式存储需掌握既能](/program/cpp/JD.md)
+* [vscode运行c++](/program/cpp/vscodeCpp.md)
 ## other
 * [Hello world 鸿蒙OS App小实践](/program/other/harmonyPractice.md)
 ## 工具
