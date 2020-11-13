@@ -32,6 +32,7 @@ module.exports = {
             '/program/cpp/HTTPIP',
             '/program/cpp/Ceph',
             '/program/cpp/CppKnowledge',
+            '/program/cpp/linuxCommand',
             '/program/cpp/Abstract',
             '/program/cpp/vscodeCpp',
             '/program/cpp/JD',

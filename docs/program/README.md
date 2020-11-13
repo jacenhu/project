@@ -16,6 +16,7 @@
 * [计算机术语概念解释（持续更新）](/program/cpp/Abstract.md)
 * [从招聘信息看分布式存储需掌握既能](/program/cpp/JD.md)
 * [vscode运行c++](/program/cpp/vscodeCpp.md)
+* [linux系统命令](/program/cpp/linuxCommand.md)
 ## other
 * [Hello world 鸿蒙OS App小实践](/program/other/harmonyPractice.md)
 ## 工具
