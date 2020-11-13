@@ -4,7 +4,7 @@
 
 **声明:**
 
-本文为TCP/IP协议学习笔记，仅作学习交流使用。
+本文为《TCP/IP详解 卷1：协议》学习笔记，原书更为详细，本文仅作学习交流使用。
 
 ## TCP/IP详解卷一 Chapter1 概述
 ### 1.1 引言
@@ -154,7 +154,36 @@ IP仅提供最好的传输服务。任何要求的可靠性必须由上层来提
 * 标志
 * 为数据报的传输
 
-### 3.4 子网寻址
+IP路由是逐跳进行的。
+
+IP路由选择过程：
+
+![http-ip-009](./../../.vuepress/public/img/httpip/httpip_009.png)
+
+### 3.5 子网掩码
+除了IP地址外，主机还需要知道有多少bit用于子网号及多少bit用于主机号。
+
+子网掩码：值为1的比特留给网络号和子网号，为0的留给主机号。
+
+IP地址一般以点分十进制方法表示，但是子网掩码却经常用十六进制来表示，特别是当界限不是一个字节时，因为子网掩码是一个比特掩码。
+
+![http-ip-010](./../../.vuepress/public/img/httpip/httpip_010.png)
+
+### 3.8 ifconfig 命令
+ifconfig一般在引导的时候运行，以配置主机上的每个接口。
+
+``` shell
+// 所有接口
+ifconfig -a
+// 某一接口
+ifconfig eth0
+```
+![http-ip-011](./../../.vuepress/public/img/httpip/httpip_011.png)
+
+### 3.9 netstat 命令
+netstat命令也提供系统上的接口信息。-i参数将打印出接口信息，-n参数则打印出IP地址，而不是主机名字。
+
+![http-ip-012](./../../.vuepress/public/img/httpip/httpip_012.png)
 
 ## TCP/IP详解卷一 Chapter4 ARP:地址解析协议
 
