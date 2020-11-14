@@ -251,6 +251,21 @@ RARP分组格式基本上与 ARP分组一致。
 ### 7.1 引言
 Ping程序用于测试另一台主机是否可达。
 ### 7.2 Ping程序
+ICMP回显请求和回显应答报文格式：
+![http-ip-017](./../../.vuepress/public/img/httpip/httpip_017.png)
+Unix系统在实现ping程序时是把 ICMP报文中的标识符字段置成发送进程的ID号。这样即使在同一台主机上同时运行了多个ping程序实例，ping程序也可以识别出返回的信息。
+序列号从0开始，每发送一次新的回显请求就加 1。 ping程序打印出返回的每个分组的序列号，允许我们查看是否有分组丢失、失序或重复。
+![http-ip-018](./../../.vuepress/public/img/httpip/httpip_018.png)
+### 7.3 IP记录路由选项
+-R： 记录路由
+![http-ip-019](./../../.vuepress/public/img/httpip/httpip_019.png)
+![http-ip-020](./../../.vuepress/public/img/httpip/httpip_020.png)
+### 7.4 IP时间戳选项
+![http-ip-021](./../../.vuepress/public/img/httpip/httpip_021.png)
+### 7.5 小结
+ping程序是对两个TCP/IP系统连通性进行测试的基本工具。
+它只利用ICMP回显请求和回显应答报文，而不经过传输层（TCP/UDP）。
+
 
 ## TCP/IP详解卷一 Chapter17 TCP:传输控制协议
 ### 17.2 TCP的服务
