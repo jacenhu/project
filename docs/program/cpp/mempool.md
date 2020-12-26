@@ -5,8 +5,12 @@
 应用程序频繁地在堆上分配和释放内存，会导致性能的损失。并且会使系统中出现大量的内存碎片，降低内存的利用率。
 
 ## 内存分配算法
-* 伙伴算法
-* slab算法
+### 伙伴算法
+* 简介：The buddy memory allocation technique is a memory allocation algorithm that divides memory into partitions to try to satisfy a memory request as suitably as possible. This system makes use of splitting memory into halves to try to give a best fit. According to Donald Knuth, the buddy system was invented in 1963 by Harry Markowitz, and was first described by Kenneth C. Knowlton (published 1965).
+
+### slab算法
+* 简介：
+The basic idea behind the slab allocator is to have caches of commonly used objects kept in an initialised state available for use by the kernel. Without an object based allocator, the kernel will spend much of its time allocating, initialising and freeing the same object. The slab allocator aims to to cache the freed object so that the basic structure is preserved between uses
 
 ## 开源内存池实现
 ### nginx的内存池
@@ -34,4 +38,21 @@ https://chensongpoixs.github.io/2019/01/11/内存池的设计/#/
 
 https://www.zhihu.com/question/25527491
 
+
+[3] What are the differences between (and reasons to choose) tcmalloc/jemalloc and memory pools?
+
+https://stackoverflow.com/questions/9866145/what-are-the-differences-between-and-reasons-to-choose-tcmalloc-jemalloc-and-m
+
+[4] Memory_pool
+
+https://en.wikipedia.org/wiki/Memory_pool
+
+[5] A Scalable Concurrent malloc(3) Implementation for FreeBSD
+
+https://people.freebsd.org/~jasone/jemalloc/bsdcan2006/jemalloc.pdf
+
+
+[6] Chapter 8  Slab Allocator
+
+https://www.kernel.org/doc/gorman/html/understand/understand011.html
 
