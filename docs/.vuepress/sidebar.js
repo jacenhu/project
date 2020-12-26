@@ -37,6 +37,7 @@ module.exports = {
             '/program/cpp/Abstract',
             '/program/cpp/vscodeCpp',
             '/program/cpp/JD',
+            '/program/cpp/mempool',
           ],
         },
         {
