@@ -2,7 +2,7 @@
 home: true
 heroText: Jacen 的个人博客
 tagline: 记录工作、生活
-actionText: 个人简历 →
+actionText: 关于我 →
 actionLink: /contact/
 features:
 - title: 技术

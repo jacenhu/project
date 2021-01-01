@@ -25,5 +25,15 @@ module.exports=[
         text:'github',
         link: 'https://github.com/jacenhu',
         target:'_blank'
+    },
+    {
+        text:'简书',
+        link: 'https://www.jianshu.com/u/9c488588c366',
+        target:'_blank'
+    },
+    {
+        text:'掘金',
+        link: 'https://juejin.cn/user/2796746683466984/activities',
+        target:'_blank'
     }   
 ]
