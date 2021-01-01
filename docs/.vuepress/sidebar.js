@@ -64,6 +64,7 @@ module.exports = {
             '/books/read/断舍离',
             '/books/read/原则',
             '/books/read/AI未来',
+            '/books/read/书单',
           ],
         },
     ],
