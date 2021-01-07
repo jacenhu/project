@@ -38,6 +38,7 @@ module.exports = {
             '/program/cpp/vscodeCpp',
             '/program/cpp/JD',
             '/program/cpp/mempool',
+            '/program/cpp/CodingInterviewSummary',
           ],
         },
         {
