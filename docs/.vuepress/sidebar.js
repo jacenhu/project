@@ -39,6 +39,7 @@ module.exports = {
             '/program/cpp/JD',
             '/program/cpp/mempool',
             '/program/cpp/CodingInterviewSummary',
+            '/program/cpp/lowCode',
           ],
         },
         {
