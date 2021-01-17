@@ -69,7 +69,7 @@ https://www.aliwork.com/
 
 2、[The Low-Code/No-Code Movement: More Disruptive Than You Realize](https://www.forbes.com/sites/jasonbloomberg/2017/07/20/the-low-codeno-code-movement-more-disruptive-than-you-realize/?sh=30074474722a)
 
-3、[https://www.softwaretestinghelp.com/low-code-development-platforms/](https://www.softwaretestinghelp.com/low-code-development-platforms/)
+3、[10 Best Low-Code Development Platforms In 2021](https://www.softwaretestinghelp.com/low-code-development-platforms/)
 
 4、[awesome-lowcode](https://github.com/taowen/awesome-lowcode)
 
