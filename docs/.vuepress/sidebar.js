@@ -40,6 +40,7 @@ module.exports = {
             '/program/cpp/mempool',
             '/program/cpp/CodingInterviewSummary',
             '/program/cpp/lowCode',
+            '/program/cpp/dataLakeWaht',
           ],
         },
         {
