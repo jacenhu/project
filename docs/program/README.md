@@ -22,6 +22,7 @@
 * [《剑指offer》小结](/program/cpp/CodingInterviewSummary.md)
 * [什么是低代码](/program/cpp/lowCode.md)
 * [什么是数据湖？及其架构](/program/cpp/dataLakeWhat.md)
+* [23种设计模式](/program/cpp/designPattern.md)
 ## other
 * [Hello world 鸿蒙OS App小实践](/program/other/harmonyPractice.md)
 ## 工具

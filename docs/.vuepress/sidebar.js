@@ -41,6 +41,7 @@ module.exports = {
             '/program/cpp/CodingInterviewSummary',
             '/program/cpp/lowCode',
             '/program/cpp/dataLakeWaht',
+            '/program/cpp/designPattern',
           ],
         },
         {
