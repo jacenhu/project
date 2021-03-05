@@ -1,9 +1,7 @@
 # C++ Primer
-[[toc]]
 
 **声明:**
-本文为《C++ Primer 中文版（第五版）》学习笔记。
-原书更为详细，本文仅作学习交流使用。
+本文为《C++ Primer 中文版（第五版）》学习笔记。原书更为详细，本文仅作学习交流使用，未经授权禁止转载。。我已加入“维权骑士”（[http://rightknights.com](https://link.zhihu.com/?target=http%3A//rightknights.com/)）的版权保护计划，转载需授权，侵权必究。
 
 ## 第一章 开始
 
