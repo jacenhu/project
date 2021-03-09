@@ -1,4 +1,4 @@
-# Sharding分片技术及业界方案（未完）
+# Sharding分片技术及业界方案
 
 
 ## 定义（维基百科）
@@ -21,6 +21,17 @@ A database shard, or simply a shard, is a horizontal partition of data in a data
 ## 分片的缺点
 * 数据热点问题，这种情况需要重新分片
 
+## 业界sharding方案
+
+* MongoDB
+* ShardingSphere
+https://shardingsphere.apache.org/document/current/cn/overview/
+* MySQL Proxy + HSCALE
+* Hibernate Shards
+* Spock Proxy 基于范围的sharding机制
+* HiveDB
+* PL/Proxy
+
 
 
 ## 参考资料
@@ -29,6 +40,13 @@ https://en.wikipedia.org/wiki/Shard_(database_architecture)
 
 [2]Understanding Database Sharding
 https://www.digitalocean.com/community/tutorials/understanding-database-sharding
+
+[3]开源数据库Sharding技术
+https://developer.aliyun.com/article/530190
+
+[4]MongoDB中文文档
+https://www.docs4dev.com/docs/zh/mongodb/v3.6/reference/sharding.html
+
 
 ## 图片来源
 [1]Understanding Database Sharding
